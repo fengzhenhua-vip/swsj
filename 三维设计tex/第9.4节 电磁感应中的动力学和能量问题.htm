@@ -1,0 +1,2780 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="第9.4节%20电磁感应中的动力学和能量问题.files/filelist.xml">
+<link rel=Edit-Time-Data href="第9.4节%20电磁感应中的动力学和能量问题.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>feng</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>feng</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:LastPrinted>2021-02-16T06:56:00Z</o:LastPrinted>
+  <o:Created>2021-02-16T06:56:00Z</o:Created>
+  <o:LastSaved>2021-02-16T06:56:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>811</o:Words>
+  <o:Characters>4625</o:Characters>
+  <o:Lines>38</o:Lines>
+  <o:Paragraphs>10</o:Paragraphs>
+  <o:CharactersWithSpaces>5426</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:KSOProductBuildVer dt:dt="string">2052-10.1.0.6115</o:KSOProductBuildVer>
+ </o:CustomDocumentProperties>
+</xml><![endif]-->
+<link rel=dataStoreItem href="第9.4节%20电磁感应中的动力学和能量问题.files/item0001.xml"
+target="第9.4节%20电磁感应中的动力学和能量问题.files/props002.xml">
+<link rel=themeData href="第9.4节%20电磁感应中的动力学和能量问题.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="第9.4节%20电磁感应中的动力学和能量问题.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ActiveWritingStyle Lang="EN-US" VendorID="64" DLLVersion="131078"
+   NLCheck="1">0</w:ActiveWritingStyle>
+  <w:ActiveWritingStyle Lang="ZH-CN" VendorID="64" DLLVersion="131077"
+   NLCheck="1">1</w:ActiveWritingStyle>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>5.25 磅</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2010TableStyleRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="371">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 2"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 9 6 1 1 1 1 1;
+	mso-font-alt:SimHei;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:"DejaVu Sans";
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 -771686913 170156073 0 511 0;}
+@font-face
+	{font-family:IPAPANNEW;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 33 0 407 0;}
+@font-face
+	{font-family:"Book Antiqua";
+	panose-1:2 4 6 2 5 3 5 3 3 4;
+	mso-font-alt:Constantia;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:宋体-方正超大字符集;
+	mso-font-alt:"Arial Unicode MS";
+	mso-font-charset:0;
+	mso-generic-font-family:script;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 16 0 262144 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-alt:none windowtext 0cm;
+	padding:0cm;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"DejaVu Sans",sans-serif;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	font-family:宋体;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	mso-font-kerning:1.0pt;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"批注框文本 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:9.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+span.a
+	{mso-style-name:"批注框文本 字符";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:批注框文本;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-font-kerning:1.0pt;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("第9.4节%20电磁感应中的动力学和能量问题.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("第9.4节%20电磁感应中的动力学和能量问题.files/header.htm") fcs;
+	mso-endnote-separator:url("第9.4节%20电磁感应中的动力学和能量问题.files/header.htm") es;
+	mso-endnote-continuation-separator:url("第9.4节%20电磁感应中的动力学和能量问题.files/header.htm") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-title-page:yes;
+	mso-header:url("第9.4节%20电磁感应中的动力学和能量问题.files/header.htm") h1;
+	mso-footer:url("第9.4节%20电磁感应中的动力学和能量问题.files/header.htm") f1;
+	mso-first-header:url("第9.4节%20电磁感应中的动力学和能量问题.files/header.htm") fh1;
+	mso-first-footer:url("第9.4节%20电磁感应中的动力学和能量问题.files/header.htm") ff1;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2049"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:
+punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=center style='text-align:center;tab-stops:123.65pt'><span
+style='font-size:16.0pt;font-family:黑体;mso-bidi-font-family:黑体'>第<span
+lang=EN-US>9.4</span>节 电磁感应中的动力学和能量问题<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+style='font-family:黑体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>要点一　电磁感应中的动力学问题</span><span lang=EN-US style='mso-fareast-font-family:
+黑体'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:IPAPANNEW;mso-fareast-font-family:黑体;mso-bidi-font-family:
+"Times New Roman"'>[</span><span style='font-family:黑体;mso-ascii-font-family:
+IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>典例</span><span
+lang=EN-US style='font-family:IPAPANNEW;mso-fareast-font-family:黑体;mso-bidi-font-family:
+"Times New Roman"'>]</span><span style='font-family:黑体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>　</span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>如图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;1</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，两根足够长的平行金属导轨固定在倾角</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>θ</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>30°</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的斜面上，导轨电阻不计，间距</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>L</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.4 m</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>。导轨所在空间被分成区域</span><span style='mso-hansi-font-family:宋体;
+mso-bidi-font-family:宋体'>Ⅰ</span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>和</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>Ⅱ</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，两区域的边界与斜面的交线为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>MN</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，</span><span style='mso-hansi-font-family:
+宋体;mso-bidi-font-family:宋体'>Ⅰ</span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>中的匀强磁场方向垂直斜面向下，</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>Ⅱ</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>中的匀强磁场方向垂直斜面向上，两磁场的磁感应强度大小均为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.5 T</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>。在区域</span><span style='mso-hansi-font-family:宋体;mso-bidi-font-family:
+宋体'>Ⅰ</span><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>中，将质量</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.1 kg</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，电阻</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.1 Ω</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的金属条</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>放在导轨上，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>刚好不下滑。然后，在区域</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>Ⅱ</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>中将质量</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.4 kg</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，电阻</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.1 Ω</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的光滑导体棒</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>cd</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>置于导轨上，由静止开始下滑。</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>cd</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>在滑动过程中始终处于区域</span><span
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:宋体'>Ⅱ</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的磁场中，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>cd</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>始终与导轨垂直且两端与导轨保持良好接触，取</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>g</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>10 m/s<sup>2</sup></span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。问：</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1035" type="#_x0000_t75" style='width:112.5pt;
+ height:69.75pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image001.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/14DG-21.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=150 height=93
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image002.jpg" v:shapes="_x0000_i1035"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;1<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)<i style='mso-bidi-font-style:
+normal'>cd</i></span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>下滑的过程中，</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>中的电流方向；</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)<i style='mso-bidi-font-style:
+normal'>ab</i></span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>刚要向上滑动时，</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>cd</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的速度</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Book Antiqua",serif;mso-bidi-font-family:
+"Times New Roman"'>v</span></i><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>多大；</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US>(3)</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>从</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>cd</span></i><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>开始下滑到</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>ab</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>刚要向上滑动的过程中，</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>cd</span></i><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>滑动的距离</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>x</span></i><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US>3.8 m</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，此过程中</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>ab</span></i><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>上产生的热量</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>Q</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>是多少。</span><span lang=EN-US style='mso-fareast-font-family:
+黑体'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:IPAPANNEW;mso-fareast-font-family:
+黑体;mso-bidi-font-family:"Times New Roman"'>[</span><span style='font-family:
+黑体;mso-ascii-font-family:IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:
+"Times New Roman"'>针对训练</span><span lang=EN-US style='font-family:IPAPANNEW;
+mso-fareast-font-family:黑体;mso-bidi-font-family:"Times New Roman"'>]</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>1</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．某电子天平原理如图</span><span lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;2</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>E</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>形磁铁的两侧为</span><span lang=EN-US style='font-family:"Times New Roman",serif'>N</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>极，中心为</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>S</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>极，两极间的磁感应强度大小均为</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，磁极宽度均为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>L</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，忽略边缘效应。一正方形线圈套于中心磁极，其骨架与秤盘连为一体，线圈两端</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>C</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>D</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>与外电路连接。当质量为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的重物放在秤盘上时，弹簧被压缩，秤盘和线圈一起向下运动</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>(</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>骨架与磁极不接触</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>，随后外电路对线圈供电，秤盘和线圈恢复到未放重物时的位置并静止，由此时对应的供电电流</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>I</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>可确定重物的质量。已知线圈匝数为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>n</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，线圈电阻为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，重力加速度为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>g</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。问：</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75" style='width:85.5pt;
+ height:60.75pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image003.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/14LZCQ9.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=114 height=81
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image004.jpg" v:shapes="_x0000_i1034"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;2<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>线圈向下运动过程中，线圈中感应电流是从</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>C</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>端还是从</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>D</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>端流出？</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>供电电流</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>I</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>是从</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>C</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>端还是从</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>D</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>端流入？求重物质量与电流的关系。</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(3)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>若线圈消耗的最大功率为</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>P</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，该电子天平能称量的最大质量是多少？</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>2</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．如图</span><span lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;3</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，间距</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>l</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.3 m</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的平行金属导轨</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>c</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>和</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>c</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>分别固定在两个竖直面内。在水平面</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>区域内和倾角</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>θ</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>37°</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的斜面</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>c</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>c</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>区域内分别有磁感应强度</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.4 T</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>、方向竖直向上和</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>1 T</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>、方向垂直于斜面向上的匀强磁场。电阻</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.3 Ω</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>、质量</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.1 kg</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、长为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>l</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的相同导体杆</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>K</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>S</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>Q</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>分别放置在导轨上，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>S</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>杆的两端固定在</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>点，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>K</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>Q</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>杆可沿导轨无摩擦滑动且始终接触良好。一端系于</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>K</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>杆中点的轻绳平行于导轨绕过轻质定滑轮自然下垂，绳上穿有质量</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.05 kg</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的小环。已知小环以</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>6<span
+style='mso-spacerun:yes'>&nbsp; </span>m</span><span lang=EN-US
+style='font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>/s<sup>2</sup></span><span
+style='mso-ascii-font-family:IPAPANNEW;mso-hansi-font-family:IPAPANNEW;
+mso-bidi-font-family:"Times New Roman"'>的加速度沿绳下滑，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:IPAPANNEW;mso-bidi-font-family:
+"Times New Roman"'>K</span></i><span style='mso-ascii-font-family:IPAPANNEW;
+mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>杆保持静止，</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:IPAPANNEW;
+mso-bidi-font-family:"Times New Roman"'>Q</span></i><span style='mso-ascii-font-family:
+IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>杆在垂直于杆且沿斜面向下的拉力</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:IPAPANNEW;
+mso-bidi-font-family:"Times New Roman"'>F</span></i><span style='mso-ascii-font-family:
+IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>作用下匀速运动。不计导轨电阻和滑轮摩擦，绳不可伸长。取</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:IPAPANNEW;
+mso-bidi-font-family:"Times New Roman"'>g</span></i><span style='mso-ascii-font-family:
+IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US style='font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>10
+m/</span><span lang=EN-US style='font-family:"Times New Roman",serif'>s<sup>2</sup></span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>sin 37°</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.6</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>，</span><span lang=EN-US style='font-family:"Times New Roman",serif'>cos
+37°</span><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>0.8</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。求</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75" style='width:138pt;
+ height:68.25pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image005.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/15WL9-93.tif"/>
+</v:shape><![endif]--><![if !vml]><img width=184 height=91
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image006.jpg" v:shapes="_x0000_i1033"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;3<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>小环所受摩擦力的大小；</span><span lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)<i style='mso-bidi-font-style:
+normal'>Q</i></span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>杆所受拉力的瞬时功率。</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<span lang=EN-US style='font-size:10.5pt;line-height:150%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:宋体;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>3.</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>如图</span><span lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;4</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，相距为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>L</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的两条足够长的光滑平行金属导轨，</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>MN</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>PQ</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>与水平面的夹角为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>θ</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>N</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>Q</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>两点间接有阻值为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的电阻。整个装置处于磁感应强度为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的匀强磁场中，磁场方向垂直导轨平面向下。将质量为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、阻值也为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的金属杆</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>垂直放在导轨上，杆</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>由静止释放，下滑距离</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>x</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>时达到最大速度。重力加速度为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>g</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，导轨电阻不计，杆与导轨接触良好。求：</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1032" type="#_x0000_t75" style='width:84.75pt;
+ height:1in;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image007.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/15WL9-94.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=113 height=96
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image008.jpg" v:shapes="_x0000_i1032"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;4<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>杆</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>下滑的最大加速度；</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>杆</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>下滑的最大速度；</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>(3)</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>上述过程中，杆上产生的热量。</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:10.5pt;font-family:宋体;mso-bidi-font-family:
+宋体;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+style='font-family:黑体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>要点二　电磁感应中的能量问题</span><span lang=EN-US style='mso-fareast-font-family:
+黑体'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:IPAPANNEW;mso-fareast-font-family:黑体;mso-bidi-font-family:
+"Times New Roman"'>[</span><span style='font-family:黑体;mso-ascii-font-family:
+IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>典例</span><span
+lang=EN-US style='font-family:IPAPANNEW;mso-fareast-font-family:黑体;mso-bidi-font-family:
+"Times New Roman"'>]</span><span style='font-family:黑体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>　</span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>如图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;5</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，在匀强磁场中有一倾斜的平行金属导轨，导轨间距为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>L</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，长为</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>3<i style='mso-bidi-font-style:
+normal'>d</i></span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>，导轨平面与水平面的夹角为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>θ</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，在导轨的中部刷有一段长为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>d</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的薄绝缘涂层。匀强磁场的磁感应强度大小为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，方向与导轨平面垂直。质量为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的导体棒从导轨的顶端由静止释放，在滑上涂层之前已经做匀速运动，并一直匀速滑到导轨底端。导体棒始终与导轨垂直，且仅与涂层间有摩擦，接在两导轨间的电阻为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，其他部分的电阻均不计，重力加速度为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>g</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。求：</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75" style='width:184.5pt;
+ height:96.75pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image009.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/14GW-15.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=246 height=129
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image010.jpg" v:shapes="_x0000_i1031"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;5<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>导体棒与涂层间的动摩擦因数</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>μ</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>；</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>导体棒匀速运动的速度大小</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Book Antiqua",serif;mso-bidi-font-family:"Times New Roman"'>v</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>；</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(3)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>整个运动过程中，电阻产生的焦耳热</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>Q</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:10.5pt;line-height:150%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:宋体;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:IPAPANNEW;mso-fareast-font-family:
+黑体;mso-bidi-font-family:"Times New Roman"'>[</span><span style='font-family:
+黑体;mso-ascii-font-family:IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:
+"Times New Roman"'>针对训练</span><span lang=EN-US style='font-family:IPAPANNEW;
+mso-fareast-font-family:黑体;mso-bidi-font-family:"Times New Roman"'>]</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>1</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．其同学设计一个发电测速装置，工作原理如图</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>9&shy;4&shy;6</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>所示。一个半径为</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.1 m</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的圆形金属导轨固定在竖直平面上，一根长为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的金属棒</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>OA</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>A</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>端与导轨接触良好，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>O</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>端固定在圆心处的转轴上。转轴的左端有一个半径为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>r</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-begin'></span>eq
+\</span><span lang=EN-US style='font-family:"Times New Roman",serif'>f(<i
+style='mso-bidi-font-style:normal'>R,</i>3)</span><![endif]--><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-end'></span></span><![endif]--><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的圆盘，圆盘和金属棒能随转轴一起转动。圆盘上绕有不可伸长的细线，下端挂着一个质量为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.5 kg</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的铝块。在金属导轨区域内存在垂直于导轨平面向右的匀强磁场，磁感应强度</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.5 T</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>。</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>点与导轨相连，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>点通过电刷与</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>O</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>端相连。测量</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>b</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>两点间的电势差</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>U</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>可算得铝块速度。铝块由静止释放，下落</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>h</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.3 m</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>时，测得</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>U</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.15 V</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>细线与圆盘间没有滑动，金属棒、导轨、导线及电刷的电阻均不计，重力加速度</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>g</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>10 m/s<sup>2</sup>)<o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75" style='width:126pt;
+ height:75.75pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image011.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/14LZZJ11.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=168 height=101
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;6<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>测</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>U</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>时，与</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>点相接的是电压表的</span><span lang=EN-US
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:"Times New Roman"'>“</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>正极</span><span lang=EN-US
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:"Times New Roman"'>”</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>还是</span><span lang=EN-US
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:"Times New Roman"'>“</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>负极</span><span lang=EN-US
+style='mso-hansi-font-family:宋体;mso-bidi-font-family:"Times New Roman"'>”</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>？</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>求此时铝块的速度大小；</span><span lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(3)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>求此下落过程中铝块机械能的损失。</span><span lang=EN-US style='font-family:
+"Times New Roman",serif'><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:10.5pt;line-height:150%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:宋体;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>2.</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>如图</span><span lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;7</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，足够长的光滑平行金属导轨</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>MN</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>PQ</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>竖直放置，一匀强磁场垂直穿过导轨平面，导轨的上端</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>M</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>与</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>P</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>间连接阻值为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.40 Ω</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的电阻，质量为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.01 kg</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、电阻为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>r</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.30 Ω</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的金属棒</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>紧贴在导轨上。现使金属棒</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>由静止开始下滑，其下滑距离与时间的关系如下表所示，导轨电阻不计，重力加速度</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>g</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>取</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>10 m/s<sup>2</sup></span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。试求：</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75" style='width:57pt;
+ height:84pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image013.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/15WL9-95.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=76 height=112
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image014.jpg" v:shapes="_x0000_i1029"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;7<o:p></o:p></span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=400
+ style='border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
+ mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:.5pt solid windowtext;mso-border-insidev:
+ .5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=112 style='width:83.7pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span style='mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'>时间</span><i style='mso-bidi-font-style:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif'>t</span></i><span
+  lang=EN-US style='font-family:"Times New Roman",serif'>(s)<i
+  style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.1<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.2<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.3<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.4<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.5<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.6<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.7<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+  <td width=112 style='width:83.7pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span style='mso-ascii-font-family:
+  "Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+  "Times New Roman"'>下滑距离</span><i style='mso-bidi-font-style:normal'><span
+  lang=EN-US style='font-family:"Times New Roman",serif'>s</span></i><span
+  lang=EN-US style='font-family:"Times New Roman",serif'>(m)<i
+  style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.1<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.3<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>0.7<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>1.4<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>2.1<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>2.8<i style='mso-bidi-font-style:normal'><o:p></o:p></i></span></p>
+  </td>
+  <td width=36 style='width:27.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoPlainText align=center style='text-align:center;line-height:150%;
+  tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US style='font-family:
+  "Times New Roman",serif'>3.5<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>当</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>t</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.7 s</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>时，重力对金属棒</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>做功的功率；</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>金属棒</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>在开始运动的</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.7 s</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>内，电阻</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>上产生的焦耳热；</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(3)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>从开始运动到</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>t</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.4 s</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的时间内，通过金属棒</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的电荷量。</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:10.5pt;line-height:150%;font-family:"Times New Roman",serif;
+mso-fareast-font-family:宋体;mso-font-kerning:1.0pt;mso-ansi-language:EN-US;
+mso-fareast-language:ZH-CN;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span
+style='font-family:黑体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>要点三　电磁感应中的杆＋导轨模型</span><span
+lang=EN-US style='font-family:"Times New Roman",serif;mso-fareast-font-family:
+黑体'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:IPAPANNEW;mso-fareast-font-family:黑体;mso-bidi-font-family:
+"Times New Roman"'>[</span><span style='font-family:黑体;mso-ascii-font-family:
+IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>典例</span><span
+lang=EN-US style='font-family:IPAPANNEW;mso-fareast-font-family:黑体;mso-bidi-font-family:
+"Times New Roman"'>1]</span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>　如图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;8</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，间距为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>L</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，电阻不计的足够长平行光滑金属导轨水平放置，导轨左端用一阻值为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的电阻连接，导轨上横跨一根质量为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，电阻也为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的金属棒，金属棒与导轨接触良好。整个装置处于竖直向上、磁感应强度为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的匀强磁场中。现使金属棒以初速度</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Book Antiqua",serif;
+mso-bidi-font-family:"Times New Roman"'>v</span></i><sub><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>沿导轨向右运动，若金属棒在整个运动过程中通过的电荷量为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>q</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。下列说法正确的是</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>　　</span><span lang=EN-US style='font-family:"Times New Roman",serif'>)<o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75" style='width:73.5pt;
+ height:42.75pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image015.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/15WL9-104.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=98 height=57
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image016.jpg" v:shapes="_x0000_i1028"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;8<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>A</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．金属棒在导轨上做匀减速运动</span><span lang=EN-US style='font-family:
+"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>B</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．整个过程中电阻</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>上产生的焦耳热为</span><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-begin'></span>eq
+\</span><span lang=EN-US style='font-family:"Times New Roman",serif'>f(<i
+style='mso-bidi-font-style:normal'>m</i></span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Book Antiqua",serif;mso-bidi-font-family:
+"Times New Roman"'>v</span></i><span lang=EN-US style='font-family:"Times New Roman",serif'>\o\al(<sup>2</sup>,<sub>0</sub>)<i
+style='mso-bidi-font-style:normal'>,</i>2)</span><![endif]--><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>C</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．整个过程中金属棒在导轨上发生的位移为</span><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-begin'></span>eq
+\</span><span lang=EN-US style='font-family:"Times New Roman",serif'>f(<i
+style='mso-bidi-font-style:normal'>qR,BL</i>)</span><![endif]--><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>D</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．整个过程中金属棒克服安培力做功为</span><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-begin'></span>eq
+\</span><span lang=EN-US style='font-family:"Times New Roman",serif'>f(<i
+style='mso-bidi-font-style:normal'>m</i></span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Book Antiqua",serif;mso-bidi-font-family:
+"Times New Roman"'>v</span></i><span lang=EN-US style='font-family:"Times New Roman",serif'>\o\al(<sup>2</sup>,<sub>0</sub>)<i
+style='mso-bidi-font-style:normal'>,</i>2)</span><![endif]--><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:IPAPANNEW;mso-fareast-font-family:黑体;mso-bidi-font-family:
+"Times New Roman"'>[</span><span style='font-family:黑体;mso-ascii-font-family:
+IPAPANNEW;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>典例</span><span
+lang=EN-US style='font-family:IPAPANNEW;mso-fareast-font-family:黑体;mso-bidi-font-family:
+"Times New Roman"'>2]</span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>　如图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;9</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，长平行导轨</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>PQ</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>MN</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>光滑，相距</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>l</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.5 m</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>，处在同一水平面中，磁感应强度</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.8 T</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的匀强磁场竖直向下穿过导轨面。横跨在导轨上的直导线</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的质量</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.1 kg</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、电阻</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.8 Ω</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>，导轨电阻不计。导轨间通过开关</span><span lang=EN-US style='font-family:
+"Times New Roman",serif'>S</span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>将电动势</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>E</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>1.5 V</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>、内电阻</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>r</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.2 Ω</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的电池接在</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>M</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>P</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>两端，试计算分析：</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75" style='width:93.75pt;
+ height:54pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image017.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/15WL9-105.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=125 height=72
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image018.jpg" v:shapes="_x0000_i1027"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;9<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>导线</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的加速度的最大值和速度的最大值是多少？</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>在闭合开关</span><span lang=EN-US style='font-family:"Times New Roman",serif'>S</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>后，怎样才能使</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>以恒定的速度</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Book Antiqua",serif;mso-bidi-font-family:
+"Times New Roman"'>v</span></i><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>7.5 m/s </span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>沿导轨向右运动？试描述这时电路中的能量转化情况</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>(</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>通过具体的数据计算说明</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>。</span><span lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<span lang=EN-US style='font-size:10.5pt;line-height:150%;font-family:宋体-方正超大字符集;
+mso-hansi-font-family:宋体-方正超大字符集;mso-bidi-font-family:宋体-方正超大字符集;mso-font-kerning:
+1.0pt;mso-ansi-language:EN-US;mso-fareast-language:ZH-CN;mso-bidi-language:
+AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>[</span><span
+style='font-family:黑体;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:
+"Times New Roman"'>典例</span><span lang=EN-US style='font-family:IPAPANNEW;
+mso-bidi-font-family:"Times New Roman"'>3]</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>　</span><span lang=EN-US style='font-family:"Times New Roman",serif'>(</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>多选</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>如图</span><span lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;10</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，在水平桌面上放置两条相距为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>l</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的平行光滑导轨</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>ab</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>与</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>cd</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，阻值为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的电阻与导轨的</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>c</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>端相连。质量为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、电阻也为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的导体棒垂直于导轨放置并可沿导轨自由滑动。整个装置放于匀强磁场中，磁场的方向竖直向上，磁感应强度的大小为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。导体棒的中点系一不可伸长的轻绳，绳绕过固定在桌边的光滑轻滑轮后，与一个质量也为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的物块相连，绳处于拉直状态。现若从静止开始释放物块，用</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>h</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>表示物块下落的高度</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>物块不会触地</span><span lang=EN-US style='font-family:"Times New Roman",serif'>)</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>g</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>表示重力加速度，其他电阻不计，则</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>(</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>　　</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>)<o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:112.5pt;
+ height:48pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image019.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/15WL9-106.tif"/>
+</v:shape><![endif]--><![if !vml]><img width=150 height=64
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image020.jpg" v:shapes="_x0000_i1026"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;10<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>A</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．电阻</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>中的感应电流方向由</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>c</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>到</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>a</span></i><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>B</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．物块下落的最大加速度为</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>g</span></i><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>C</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．若</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>h</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>足够大，物块下落的最大速度为</span><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-begin'></span>eq
+\</span><span lang=EN-US style='font-family:"Times New Roman",serif'>f(2<i
+style='mso-bidi-font-style:normal'>mgR,B</i><sup>2</sup><i style='mso-bidi-font-style:
+normal'>l</i><sup>2</sup>)</span><![endif]--><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>D</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>．通过电阻</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>R</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的电荷量为</span><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-begin'></span>eq
+\</span><span lang=EN-US style='font-family:"Times New Roman",serif'>f(<i
+style='mso-bidi-font-style:normal'>Blh,R</i>)</span><![endif]--><!--[if supportFields]><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;
+mso-bidi-font-family:宋体-方正超大字符集'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:IPAPANNEW;mso-bidi-font-family:"Times New Roman"'>[</span><span
+style='font-family:黑体;mso-hansi-font-family:IPAPANNEW;mso-bidi-font-family:
+"Times New Roman"'>典例</span><span lang=EN-US style='font-family:IPAPANNEW;
+mso-bidi-font-family:"Times New Roman"'>4]</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>　如图</span><span lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;11</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>所示，水平面内有两根足够长的平行导轨</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>L</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>、</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>L</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，其间距</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>d</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.5 m</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>，左端接有容量</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>C</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>2 000 μF</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>的电容。质量</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>m</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>20 g</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>的导体棒可在导轨上无摩擦滑动，导体棒和导轨的电阻不计。整个空间存在着垂直导轨所在平面的匀强磁场，磁感应强度</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>2 T</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>。现用一沿导轨方向向右的恒力</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>F</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>1</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>＝</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>0.44 N</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>作用于导体棒，使导体棒从静止开始运动，经</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>t</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>时间后到达</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>处，速度</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Book Antiqua",serif;mso-bidi-font-family:
+"Times New Roman"'>v</span></i><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>＝</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>5 m/s</span><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>。此时，突然将拉力方向变为沿导轨向左，大小变为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>F</span></i><sub><span
+lang=EN-US style='font-family:"Times New Roman",serif'>2</span></sub><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>，又经</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'>2<i style='mso-bidi-font-style:
+normal'>t</i></span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>时</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:"Times New Roman",serif;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:90.75pt;
+ height:39.75pt;visibility:visible'>
+ <v:imagedata src="第9.4节%20电磁感应中的动力学和能量问题.files/image021.png" o:href="../中学资料/讲课资料（精品）/讲义资料/三维设计（讲义）/三维设计DOC/15WL9-107.TIF"/>
+</v:shape><![endif]--><![if !vml]><img width=121 height=53
+src="第9.4节%20电磁感应中的动力学和能量问题.files/image022.jpg" v:shapes="_x0000_i1025"><![endif]></span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText align=center style='text-align:center;text-indent:21.0pt;
+mso-char-indent-count:2.0;line-height:150%;tab-stops:189.0pt;layout-grid-mode:
+char'><span style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-bidi-font-family:"Times New Roman"'>图</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'>9&shy;4&shy;11<o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>间后导体棒返回到初始位置</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>A</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>处，整个过程电容器未被击穿。求</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(1)</span><span style='mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:
+"Times New Roman"'>导体棒运动到</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US style='font-family:"Times New Roman",serif'>B</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>处时，电容</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='font-family:"Times New Roman",serif'>C</span></i><span
+style='mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'>上的电量；</span><span lang=EN-US
+style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(2)<i style='mso-bidi-font-style:
+normal'>t</i></span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>的大小；</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif'>(3)<i style='mso-bidi-font-style:
+normal'>F</i><sub>2</sub></span><span style='mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-bidi-font-family:"Times New Roman"'>的大小。</span><span
+lang=EN-US style='font-family:"Times New Roman",serif'><o:p></o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;mso-bidi-font-family:
+宋体-方正超大字符集'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;mso-bidi-font-family:
+宋体-方正超大字符集'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:宋体-方正超大字符集;mso-hansi-font-family:宋体-方正超大字符集;mso-bidi-font-family:
+宋体-方正超大字符集'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText style='text-indent:21.0pt;mso-char-indent-count:2.0;
+line-height:150%;tab-stops:189.0pt;layout-grid-mode:char'><span lang=EN-US
+style='font-family:"Times New Roman",serif;mso-fareast-font-family:黑体'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;tab-stops:123.65pt'><span
+lang=EN-US style='mso-fareast-font-family:黑体'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
